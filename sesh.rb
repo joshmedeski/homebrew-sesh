@@ -5,7 +5,7 @@
 class Sesh < Formula
   desc "Smart terminal session manager"
   homepage "https://github.com/joshmedeski/sesh"
-  version "2.6.0"
+  version "2.7.0"
   license "MIT"
 
   depends_on "tmux"
@@ -13,16 +13,16 @@ class Sesh < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/joshmedeski/sesh/releases/download/v2.6.0/sesh_Darwin_x86_64.tar.gz"
-      sha256 "cc1f223f46d1b6925edee4abad068e8214b93e49ff67122b5c1297425d52a42d"
+      url "https://github.com/joshmedeski/sesh/releases/download/v2.7.0/sesh_Darwin_x86_64.tar.gz"
+      sha256 "c489185e9a82bc034090eb559bddfd508b0d01d3f95d1b014bfc4a70b42caea4"
 
       def install
         bin.install "sesh"
       end
     end
     on_arm do
-      url "https://github.com/joshmedeski/sesh/releases/download/v2.6.0/sesh_Darwin_arm64.tar.gz"
-      sha256 "e12bc258c58e3bff0ee8da688839cbf31c6d1f99379486f9ad363ebb29ce5f75"
+      url "https://github.com/joshmedeski/sesh/releases/download/v2.7.0/sesh_Darwin_arm64.tar.gz"
+      sha256 "fd426f2e48d2f5c08addbebab1435de0754b77bcd082e69469523662cae3228c"
 
       def install
         bin.install "sesh"
@@ -33,8 +33,8 @@ class Sesh < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/joshmedeski/sesh/releases/download/v2.6.0/sesh_Linux_x86_64.tar.gz"
-        sha256 "3af2983de3d32ad9955872a08cba7b0837ebe6ee97ad1ae16c16880cfcf608c5"
+        url "https://github.com/joshmedeski/sesh/releases/download/v2.7.0/sesh_Linux_x86_64.tar.gz"
+        sha256 "40fbda80b1817291e9f10aeb80fba096d21d2ace9ba454392ccb1e4296ae138c"
 
         def install
           bin.install "sesh"
@@ -43,8 +43,8 @@ class Sesh < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/joshmedeski/sesh/releases/download/v2.6.0/sesh_Linux_arm64.tar.gz"
-        sha256 "ec1a1c6979dc336365cb446dde556e7693eef37c3a14cf685226454c60314c6a"
+        url "https://github.com/joshmedeski/sesh/releases/download/v2.7.0/sesh_Linux_arm64.tar.gz"
+        sha256 "2759c38f29393473d7abbc70c8f5c5a95a2730b769767cd38c14083c07f70c69"
 
         def install
           bin.install "sesh"
