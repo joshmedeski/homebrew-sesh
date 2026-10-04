@@ -5,7 +5,7 @@
 class Sesh < Formula
   desc "Smart terminal session manager"
   homepage "https://github.com/joshmedeski/sesh"
-  version "2.31.0"
+  version "2.32.0"
   license "MIT"
 
   depends_on "tmux"
@@ -13,8 +13,8 @@ class Sesh < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joshmedeski/sesh/releases/download/v2.31.0/sesh_Darwin_x86_64.tar.gz"
-      sha256 "1b3670f9df4cc03996bc0b4914311c6023edec2f2e61981496384e2c49aa78b7"
+      url "https://github.com/joshmedeski/sesh/releases/download/v2.32.0/sesh_Darwin_x86_64.tar.gz"
+      sha256 "cefc824e6472e7b99219744cb16a9d69800a89396062798cba70f08a7a8d6746"
 
       define_method(:install) do
         bin.install "sesh"
@@ -22,8 +22,8 @@ class Sesh < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joshmedeski/sesh/releases/download/v2.31.0/sesh_Darwin_arm64.tar.gz"
-      sha256 "c063cb3d2a6bc9b64e9640ef7c19a8feb9018b9bb87213c7f721e9cc5fd43e34"
+      url "https://github.com/joshmedeski/sesh/releases/download/v2.32.0/sesh_Darwin_arm64.tar.gz"
+      sha256 "27a03add6e2b47834d3b145a2673e27ded927d89986b087dafe2b5e9fc46e55b"
 
       define_method(:install) do
         bin.install "sesh"
@@ -34,16 +34,16 @@ class Sesh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joshmedeski/sesh/releases/download/v2.31.0/sesh_Linux_x86_64.tar.gz"
-      sha256 "83c07290cc13c4f80a3a99ba4496134ba60553ad24fb9302f88c1ee922fe6a69"
+      url "https://github.com/joshmedeski/sesh/releases/download/v2.32.0/sesh_Linux_x86_64.tar.gz"
+      sha256 "03efc5ebc3f2159a497eb837e6c878a9a2a997d446e628e9e3a4445243c7129e"
       define_method(:install) do
         bin.install "sesh"
         man1.install "share/man/man1/sesh.1"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joshmedeski/sesh/releases/download/v2.31.0/sesh_Linux_arm64.tar.gz"
-      sha256 "d83d00a6f0c3c961b6f248c89dcbb0916db6c054bde6be19001a3fd8acf88748"
+      url "https://github.com/joshmedeski/sesh/releases/download/v2.32.0/sesh_Linux_arm64.tar.gz"
+      sha256 "84401f55d28eee018a38c8030d0dc1fe0c174a99e64508834384cab6ae4484ea"
       define_method(:install) do
         bin.install "sesh"
         man1.install "share/man/man1/sesh.1"
